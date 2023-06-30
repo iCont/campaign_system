@@ -3,7 +3,7 @@
     <div class="container prueba">
         <div class="row">
             <div class="col-12 text-center">
-                <h1 class="text-uppercase">Dias festivos</h1>
+                <h1 class="text-uppercase">Campañas</h1>
             </div>
         </div>
         <hr>
@@ -33,14 +33,10 @@
             const calendarEl = document.getElementById('calendar');
             const calendar = new FullCalendar.Calendar(calendarEl, {
                 initialView: 'dayGridMonth',
+                locales: 'es',
                 events: @json($holidays)
             });
             calendar.render();
-        });
-    </script>
-    <script>
-        const calendar = new FullCalendar.Calendar(calendarEl, {
-            locale: 'es'
         });
     </script>
 @endpush

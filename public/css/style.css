@@ -5,3 +5,24 @@
 .prueba{
     border: red solid 1px;;
 }
+
+.fc-scrollgrid-sync-inner a{
+    text-decoration: none !important;
+    color: black !important;
+    text-transform: uppercase;
+}
+
+.fc-toolbar-title{
+    text-transform: uppercase;
+}
+
+.fc-event{
+    background-color: black !important;
+    color: white;
+}
+a div{
+    color: white;
+}
+td, th{
+    border: 1px red solid !important;
+}
