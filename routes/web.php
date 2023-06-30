@@ -1,5 +1,7 @@
 <?php
 
+use App\Http\Controllers\HolidayController;
+use App\Http\Controllers\HolidayTypeController;
 use Illuminate\Support\Facades\Route;
 
 /*
@@ -16,3 +18,5 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+Route::get('/holiday_type',[HolidayTypeController::class,'index'])->name('holiday_type.index');
+Route::get('/holidays',[HolidayController::class,'index'])->name('holidays.index');
