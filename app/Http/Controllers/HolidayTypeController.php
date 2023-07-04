@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\HolidayType;
 use Illuminate\Http\Request;
 
 class HolidayTypeController extends Controller

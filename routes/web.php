@@ -19,4 +19,5 @@ Route::get('/', function () {
     return view('welcome');
 });
 Route::get('/holiday_type',[HolidayTypeController::class,'index'])->name('holiday_type.index');
-Route::get('/holidays',[HolidayController::class,'index'])->name('holidays.index');
+Route::get('/campaings_configurations',[HolidayController::class,'index'])->name('campaings.index');
+Route::post('/campaings_store',[HolidayController::class,'store'])->name('campaings.store');

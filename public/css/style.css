@@ -1,9 +1,29 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,200;0,300;0,400;0,500;0,600;0,800;0,900;1,100;1,700&display=swap');
+
+:root {
+    /*------ Colores */
+    --principal-color: #f8d5cd;
+    --secondary-color: #bc9e56;
+    --third-color: #6d6e70;
+}
+
+html {
+    font-family: 'Montserrat', sans-serif !important;
+    overflow-x: hidden;
+    /* font-size: 62.5%; */
+    /* font-size: 70%; */
+}
+
 .logo{
     width: 180px;
 }
 
 .prueba{
     border: red solid 1px;;
+}
+
+.fc-event-time{
+    display: none;
 }
 
 .fc-scrollgrid-sync-inner a{
@@ -16,13 +36,79 @@
     text-transform: uppercase;
 }
 
+.fc-event-title{
+    cursor: pointer;
+}
+
 .fc-event{
-    background-color: black !important;
-    color: white;
+    background-color: var(--principal-color) !important;
+    color: var(--secondary-color);
+    font-weight: 900;
 }
 a div{
-    color: white;
+    color: var(--secondary-color);
+    font-weight: 900;
+    font-size: .7rem;
 }
 td, th{
-    border: 1px red solid !important;
+    border: 1px var(--secondary-color) solid !important;
+    background-color: white;
+}
+
+#title_form{
+    margin-top: 4px;
+    font-size: 27px;
+}
+.wrapper_form{
+    background-color: var(--principal-color);
+}
+
+.div_campaing{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.btn-primary_1, .btn-primary_1:hover{
+    background-color: var(--principal-color);
+    font-weight: 700;
+}
+
+.div_form{
+    margin-top: 20px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    border-radius: 10px;
+    border: var(--secondary-color) solid 1px;
+}
+
+.fc-toolbar-title,
+#title_form{
+    color:var(--third-color);
+}
+
+input,select{
+    height: 50px;
+}
+
+.separador {
+    height: 80px;
+}
+
+#separador_div{
+    display:none;
+}
+
+.separador_sm {
+    height: 40px;
+}
+
+#logo_footer {
+    width: 100px;
+}
+
+@media screen and (max-width: 767px) {
+    #separador_div{
+        display: block;
+    }
 }
