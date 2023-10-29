@@ -17,6 +17,8 @@ class HolidayController extends Controller
                 'title'=>$holiday->name,
                 'start'=>$holiday->holiday_day,
                 'end'=>$holiday->holiday_day,
+                'holiday_type_id'=>$holiday->holiday_type_id,
+                'is_repeat'=>$holiday->is_repeat,
             ];
         }
         return view('holidays.index',compact('holidays','holidaysType'));
@@ -38,5 +40,10 @@ class HolidayController extends Controller
             'status'=>1
         ]);
         return back()->with('success', 'ok');
+    }
+
+    public function show($id){
+       $data['holidays']= Holiday::all();
+       return response()->json($data['holidays']);
     }
 }

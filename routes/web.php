@@ -21,3 +21,4 @@ Route::get('/', function () {
 Route::get('/holiday_type',[HolidayTypeController::class,'index'])->name('holiday_type.index');
 Route::get('/campaings_configurations',[HolidayController::class,'index'])->name('campaings.index');
 Route::post('/campaings_store',[HolidayController::class,'store'])->name('campaings.store');
+Route::get('campaing_show/{$campaing}',[HolidayController::class,'show'])->name('campaing.show');
